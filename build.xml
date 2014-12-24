@@ -17,16 +17,16 @@
 		<delete dir="${dist.dir}" />
 	</target>
 
-    <target name="check-jdivisitor-lib">
+	<target name="check-jdivisitor-lib">
 		<!-- Check that the specified JDI Visitor library is valid -->
 		<fail message="JDIVisitor library is not valid at ${jdivisitor.lib}">
 			<condition>
-                <not>
-                    <available file="${jdivisitor.lib}" />
-                </not>
+				<not>
+					<available file="${jdivisitor.lib}" />
+				</not>
 			</condition>
 		</fail>
-    </target>
+	</target>
 
 	<target name="init" depends="check-jdivisitor-lib">
 		<mkdir dir="${build.dir}/classes" />
