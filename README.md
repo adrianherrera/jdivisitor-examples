@@ -1,4 +1,4 @@
-jdi-visitor-examples
+JDIVisitor Examples
 ====================
 
 Example applications using the [JDIVisitor](https://github.com/adrianherrera/jdivisitor) library.
