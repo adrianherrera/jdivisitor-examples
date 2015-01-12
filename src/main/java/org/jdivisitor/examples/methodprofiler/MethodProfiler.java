@@ -30,7 +30,7 @@ import com.sun.jdi.VirtualMachine;
 public final class MethodProfiler {
 
     public static void main(String[] args) throws Exception {
-        if (args.length == 0) {
+        if (args.length < 1) {
             System.err.println("Incorrect number of command-line arguments");
             System.err.println("Usage: MethodProfiler <main-class> <options>");
 

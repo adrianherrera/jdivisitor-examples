@@ -32,7 +32,7 @@ import org.jdivisitor.debugger.request.EventRequestor;
  */
 class MethodProfilerRequests implements EventRequestor {
 
-    // These packages will be excluded from the method count
+    // Exclude these packages
     private final static String[] EXCLUDES = { "sun.*", "com.sun.*" };
 
     public void requestEvents(EventRequestManager erm) {
