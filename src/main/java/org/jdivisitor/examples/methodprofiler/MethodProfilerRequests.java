@@ -35,6 +35,7 @@ class MethodProfilerRequests implements EventRequestor {
     // Exclude these packages
     private final static String[] EXCLUDES = { "sun.*", "com.sun.*" };
 
+    @Override
     public void requestEvents(EventRequestManager erm) {
         // Exclude some packages
         MethodEntryRequest mer = erm.createMethodEntryRequest();
